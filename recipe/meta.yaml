@@ -1,5 +1,5 @@
 {% set name = "python-graphblas" %}
-{% set version = "2022.9.0" %}
+{% set version = "2022.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/python-graphblas-{{ version }}.tar.gz
-  sha256: ba3fc563f498f70148ac3ef26b9b6b85410c6a6b98f2e70786eacf2607b2eadd
+  sha256: 60db480974b8dcc11c8baab228b2162a4dc1896d4789f43f451e18885864a139
 
 build:
   noarch: python
@@ -22,13 +22,13 @@ requirements:
     - donfig
     - numba
     - python >=3.8
-    - python-suitesparse-graphblas >=7.2.0.0,<7.3
+    - python-suitesparse-graphblas >=7.2.0.0,<7.4
     - pyyaml
 
 test:
   imports:
     - graphblas
-    - graphblas._ss
+    - graphblas.agg
   commands:
     - pip check
     - python -c "from graphblas import Matrix"
