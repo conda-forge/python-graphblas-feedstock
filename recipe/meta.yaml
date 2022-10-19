@@ -22,13 +22,13 @@ requirements:
     - donfig
     - numba
     - python >=3.8
-    - python-suitesparse-graphblas >=7.2.0.0,<7.3
+    - python-suitesparse-graphblas >=7.2.0.0,<7.4
     - pyyaml
 
 test:
   imports:
     - graphblas
-    - graphblas._ss
+    - graphblas.agg
   commands:
     - pip check
     - python -c "from graphblas import Matrix"
