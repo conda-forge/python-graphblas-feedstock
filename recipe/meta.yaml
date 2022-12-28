@@ -1,5 +1,5 @@
 {% set name = "python-graphblas" %}
-{% set version = "2022.11.1" %}
+{% set version = "2022.12.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/python-graphblas-{{ version }}.tar.gz
-  sha256: 174754a59666b90b0858af0148598a2ef1605fb159e466219f84f719c69c53f5
+  sha256: e2a1ccf3e4a06c90083ee35188798bcdad056daffb255f9581de9f8d48bf2635
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - donfig
     - numba
     - python >=3.8
-    - python-suitesparse-graphblas >=7.3.2.0,<7.4
+    - python-suitesparse-graphblas >=7.4.0.0,<7.5
     - pyyaml
 
 test:
@@ -37,7 +37,7 @@ test:
 
 about:
   home: https://github.com/python-graphblas/python-graphblas
-  summary: Python interface to GraphBLAS
+  summary: 'Python library for GraphBLAS: high-performance sparse linear algebra for scalable graph analytics'
   license: Apache-2.0
   license_file: LICENSE
   license_family: Apache
