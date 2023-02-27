@@ -1,11 +1,11 @@
-About python-graphblas
-======================
+About python-graphblas-feedstock
+================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-graphblas-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/python-graphblas/python-graphblas
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-graphblas-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python library for GraphBLAS: high-performance sparse linear algebra for scalable graph analytics
 
