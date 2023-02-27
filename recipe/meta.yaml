@@ -1,5 +1,5 @@
 {% set name = "python-graphblas" %}
-{% set version = "2023.1.0" %}
+{% set version = "2023.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/python-graphblas-{{ version }}.tar.gz
-  sha256: a08b807ea4a8ca1a97592cf38730c1da93d4150929d79ae6cd00021b2b1f1f15
+  sha256: a58cd20ad938ef524bb0b604bfa64ed79046d0d4e1ae85cbabb426f9ef733a34
 
 build:
   noarch: python
