@@ -1,5 +1,5 @@
 {% set name = "python-graphblas" %}
-{% set version = "2023.7.0" %}
+{% set version = "2023.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/python-graphblas-{{ version }}.tar.gz
-  sha256: 76515d8fbb61b7ef50bcb3fc2dee040f0f243e5b93b41593ce7925aa4d39296c
+  sha256: 5754d9c41aae70416b4f5f9af07a7e0aa10497d5895f4da06921eafb3f6ca669
 
 build:
   noarch: python
@@ -16,15 +16,15 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - setuptools >=64
     - setuptools-git-versioning
     - pip
   run:
-    - python >=3.8
-    - python-suitesparse-graphblas >=7.4.0.0,<7.5
+    - python >=3.9
+    - python-suitesparse-graphblas >=7.4.0.0,<9
     - numpy >=1.21
-    - numba >=0.55
+    - numba >=0.55  # [py<312]
     - donfig >=0.6
     - pyyaml >=5.4
 
