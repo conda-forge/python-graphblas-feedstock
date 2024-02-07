@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python
     - setuptools >=64
     - setuptools-git-versioning
     - pip
   run:
-    - python >=3.9
+    - python
     - python-suitesparse-graphblas >=7.4.0.0,<9
     - numpy >=1.22
     - numba >=0.55  # [py<313]
