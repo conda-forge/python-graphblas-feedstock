@@ -38,7 +38,7 @@ test:
     - python -c "from graphblas import Matrix"
   requires:
     - pip
-    - python python {{ python_min }}
+    - python {{ python_min }}
 
 about:
   home: https://github.com/python-graphblas/python-graphblas
